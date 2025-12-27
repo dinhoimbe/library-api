@@ -1,0 +1,18 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+title Modelo de dominio mínimo: Library y Book
+
+class Library {
+  +Long id
+  +String name
+}
+
+class Book {
+  +Long id
+  +String title
+  +String author
+}
+
+Library "1" o-- "*" Book : contiene
+@enduml
